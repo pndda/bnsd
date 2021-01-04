@@ -5,34 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo();?> </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <?php wp_head() ?>
 </head>
 
 <body>
 
 <header>
-        <!-- <div class="main-navbar hide-mobile">
-        <div class="container">
-            <nav class="main-nav d-flex justify-content-between align-items-center trigger-main-nav">   
-                    <div class="logo">
-                    {{ page.header }}
-                    BNSD 
-                       
-                    </div>
-               search 
-               <br>
-               login
-               <br>
-               shop 
-                    {{ page.mainNav }}
-
-                   
-            </nav>
-             </div>
-        </div> -->
-
-        <!--end main nav -->
-        <!--begin mobile nav -->
 
         <div class="mobile-navbar ">
             <nav class=" d-flex justify-content-between align-items-center trigger-main-nav">
