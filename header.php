@@ -10,13 +10,74 @@
 
 <body>
 
-    <header>
-        <? $query = new WP_Query( ['post_type' => 'page'] ); ?>
-        <?php if ($query-> have_posts() ) : ?>
-        <nav>
-            <ul>
-                
-            </ul>
-        </nav>
-        <? endif ; ?>
+<header>
+        <!-- <div class="main-navbar hide-mobile">
+        <div class="container">
+            <nav class="main-nav d-flex justify-content-between align-items-center trigger-main-nav">   
+                    <div class="logo">
+                    {{ page.header }}
+                    BNSD 
+                       
+                    </div>
+               search 
+               <br>
+               login
+               <br>
+               shop 
+                    {{ page.mainNav }}
+
+                   
+            </nav>
+             </div>
+        </div> -->
+
+        <!--end main nav -->
+        <!--begin mobile nav -->
+
+        <div class="mobile-navbar ">
+            <nav class=" d-flex justify-content-between align-items-center trigger-main-nav">
+                <div class="logo">
+                    BNSD - logo
+                </div>
+
+
+
+                <ul class="mobile-navbar__list d-flex align-items-center ">
+                    <!-- <li class="mobile-navbar__list__item">
+                        <a href="#" class=" ">
+                            <img src="{{directory}}/assets/img/icons/login.svg" width="16" alt="">
+                            login
+                        </a>
+                    </li>
+                    <li class="mobile-navbar__list__item ">
+                        <a href="#" class=" ">
+                            <img src="{{directory}}/assets/img/icons/search_mobile.svg" width="16" alt="">
+                            search
+                        </a>
+                    </li> -->
+                    <li class="mobile-navbar__list__item">
+                        <div class="mobile-navbar__list__item__link hamburger" id="hamburger-1">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="menu">
+            <nav class="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
+    <!--HIDDEN SEARCH SECTION-->
+    <div class="hidden-nvigation"></div>
+    <!--END SEARCH SECTION-->

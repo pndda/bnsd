@@ -8,10 +8,73 @@ version. 1.0 alpa
 
 
 
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(15, 14, 14);
+    color: white;
+}
 section{
-    height: 100vh;
-    width: 100%;
-
+    background-color: black;
+    color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
+.container {
+    padding: 50px;
+}
+
+.header .container {
+    height: 650px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+
+.header .container h1 {
+    text-align: center;
+}
+
+.graphic__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 350px))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    grid-gap: 1rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.graphic__wrapper .graphic__work {
+    background-color: white;
+    height: 250px;
+}
+
+.art__info {
+    color: tomato;
+}
+
+/*  FOOTER */
+.music__links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+}
+
+.music__links ul li {
+    margin: 5px;
+}
+
+.info__links ul {
+    text-align: center;
+}
 
